@@ -91,3 +91,16 @@ sudo n stable
 // 安装官方最新LTS版本
 sudo n lts
 ```
+
+### 远程windows工具：rdesktop 安装
+
+```bash
+sudo apt-get install rdesktop
+```
+
+```bash
+// 链接
+rdesktop -f 192.168.1.112  (这里的ip对应自己windows的ip地址)
+```
+
+- f参数默认全屏打开，使用Ctrl + Alt + Enter可以退出全屏模式。
