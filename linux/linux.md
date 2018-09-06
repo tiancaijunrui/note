@@ -100,7 +100,29 @@ sudo apt-get install rdesktop
 
 ```bash
 // 链接
-rdesktop -f 192.168.1.112  (这里的ip对应自己windows的ip地址)
+rdesktop -f 192.168.1.28  (这里的ip对应自己windows的ip地址)
+
 ```
 
 - f参数默认全屏打开，使用Ctrl + Alt + Enter可以退出全屏模式。
+
+### Ubuntu下E: 无法对目录 /var/lib/apt/lists/ 加锁 处理
+
+```bash
+sudo rm /var/lib/apt/lists/lock
+
+```
+
+### ubuntu mySql 安装
+
+```bash
+sudo apt-get install mysql-server
+
+sudo apt install mysql-client
+
+sudo apt install libmysqlclient-dev
+
+// 验 证 是 否 安 装 成 功
+
+sudo netstat -tap | grep mysql
+```
